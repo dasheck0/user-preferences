@@ -16,7 +16,7 @@ __link_file ()
     echo "Creating symlink from $(pwd)/$1 to $DESTINATION"
 
     __backup_file $DESTINATION
-    ln -s $1 $DESTINATION
+    cp $1 $DESTINATION
 }
 
 
