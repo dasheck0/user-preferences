@@ -1,0 +1,13 @@
+BashSupport
+Docker
+Key promoter
+MetricsReloaded
+NodeJS
+PsiViewer
+Referencer
+com.dmarcotte.handlebars
+com.github.leomillon.uuidgenerator
+com.paperetto.dash
+com.thoughtworks.gauge
+net.seesharpsoft.intellij.plugins.csv
+org.zalando.intellij.swagger

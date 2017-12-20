@@ -1,0 +1,21 @@
+<templateSet group="Hemera">
+  <template name="act" value="hemera.act({&#10;    topic: '$TOPIC$',&#10;    cmd: '$CMD$'&#10;}, (error, response) =&gt; {&#10;    $END$&#10;});" description="Hemera act derective" toReformat="true" toShortenFQNames="true">
+    <variable name="TOPIC" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="CMD" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JS_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="add" value="hemera.add({&#10;    topic: '$TOPIC$',&#10;    cmd: '$CMD$'&#10;}, (req, next) =&gt; {&#10;    $END$&#10;});&#10;   " description="Hemera add derective" toReformat="true" toShortenFQNames="true">
+    <variable name="TOPIC" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="CMD" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JS_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="ready" value="hemera.ready(() =&gt; {&#10;    $END$&#10;});&#10;   " description="Hemera ready derective" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="JS_STATEMENT" value="true" />
+    </context>
+  </template>
+</templateSet>

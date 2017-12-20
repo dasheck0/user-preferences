@@ -1,0 +1,66 @@
+<templateSet group="Apiary">
+  <template name="+stringreq" value="+ $NAME$: $VALUE$ (string, required) - $DESCRIPTION$." description="Creates a required string attribute" toReformat="false" toShortenFQNames="true">
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="VALUE" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="DESCRIPTION" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="+numberreq" value="+ $NAME$: $VALUE$ (number, required) - $DESCRIPTION$." description="Creates a required number attribute" toReformat="false" toShortenFQNames="true">
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="VALUE" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="DESCRIPTION" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="+numberopt" value="+ $NAME$: $VALUE$ (number, optional) - $DESCRIPTION$." description="Creates an optional number attribute" toReformat="false" toShortenFQNames="true">
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="VALUE" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="DESCRIPTION" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="+stringopt" value="+ $NAME$: $VALUE$ (string, optional) - $DESCRIPTION$." description="Creates an optional string attribute" toReformat="false" toShortenFQNames="true">
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="VALUE" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="DESCRIPTION" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="+responseattribute" value="+ Response $CODE$ (application/json)&#10;    + Attribute($END$)" description="Creates a json response statement with an attribute" toReformat="false" toShortenFQNames="true">
+    <variable name="CODE" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="+responsebody" value="+ Response $CODE$ (application/json)&#10;    + Body&#10;        &#10;            {&#10;                $END$&#10;            }" description="Creates a json response statement with a body" toReformat="false" toShortenFQNames="true">
+    <variable name="CODE" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="+requestbody" value="+ Request (application/json)&#10;    + Body&#10;        &#10;            {&#10;                $END$&#10;            }" description="Creates a json request statement with a body" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="+requestattribute" value="+ Request (application/json)&#10;    + Attribute($END$)" description="Creates a json request statement with an attribute" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="+attr" value="+ $NAME$: $VALUE$ ($TYPE$, $REQUIRED$) - $DESCRIPTION$." description="Creates an attribute" toReformat="false" toShortenFQNames="true">
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="VALUE" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="TYPE" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="REQUIRED" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="DESCRIPTION" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+</templateSet>

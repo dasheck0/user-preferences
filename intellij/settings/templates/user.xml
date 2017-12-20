@@ -1,0 +1,8 @@
+<templateSet group="user">
+  <template name="aci" value="/**&#10;    ACI: $DATE$&#10;*/" description="gfhdsfjidshdfkls" toReformat="false" toShortenFQNames="true">
+    <variable name="DATE" expression="date()" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+</templateSet>

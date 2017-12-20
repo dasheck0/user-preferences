@@ -1,0 +1,27 @@
+<templateSet group="Apidoc">
+  <template name="apidoc" value="/** &#10; * @api $NAME$ $DESCRIPTION$&#10; * @apiVersion $VERSION$&#10; *&#10; * @apiGroup $GROUP$&#10; *&#10; * $END$&#10; */" description="Generates an apidoc template" toReformat="false" toShortenFQNames="true">
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="DESCRIPTION" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="VERSION" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="GROUP" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="apiparam" value="@apiParam {$TYPE$} $NAME$ $DESCRIPTION$" description="Generates an @apiParam template" toReformat="false" toShortenFQNames="true">
+    <variable name="TYPE" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="DESCRIPTION" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="apierror" value="@apiError ($CODE$) $NAME$ $DESCRIPTION$" description="Generates an @apiError template" toReformat="false" toShortenFQNames="true">
+    <variable name="CODE" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="DESCRIPTION" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+</templateSet>
